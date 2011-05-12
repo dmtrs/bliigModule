@@ -1,19 +1,19 @@
 <?php
-
+/**
+ * The followings are the available columns in table 'tbl_comment':
+ * @property integer $id
+ * @property string $content
+ * @property integer $status
+ * @property integer $create_time
+ * @property string $author
+ * @property string $email
+ * @property string $url
+ * @property integer $post_id
+ */
 class Comment extends EModuleActiveRecord
 {
     public $verifyCaptcha;
-	/**
-	 * The followings are the available columns in table 'tbl_comment':
-	 * @var integer $id
-	 * @var string $content
-	 * @var integer $status
-	 * @var integer $create_time
-	 * @var string $author
-	 * @var string $email
-	 * @var string $url
-	 * @var integer $post_id
-	 */
+	
 	const STATUS_PENDING=1;
 	const STATUS_APPROVED=2;
 
@@ -31,7 +31,7 @@ class Comment extends EModuleActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_comment';
+		return "{{".Yii::app()->controller->module->commentTable."}}";
 	}
 
 	/**
