@@ -6,6 +6,7 @@ Yii::import("bliig.components.*");
 /**
  * The bliig blog module.
  * @package application.modules.bliig
+<<<<<<< HEAD
  * @author phpnode
  * @author tydeas
  */
@@ -23,6 +24,7 @@ class BliigModule extends CWebModule
 	 * Defaults to "posts"
 	 * @type string 
 	 */
+
 	public $postTable = "post";
 	
 	/**
@@ -30,6 +32,7 @@ class BliigModule extends CWebModule
 	 * Defaults to "comments"
 	 * @type string 
 	 */
+
 	public $commentTable = "comment";
 	
 	/**
@@ -44,6 +47,7 @@ class BliigModule extends CWebModule
 	 * Defaults to "tags"
 	 * @type string 
 	 */
+
 	public $tagTable = "tag";
 	
 	/**
