@@ -10,6 +10,41 @@ Yii::import("bliig.components.*");
 class BliigModule extends CWebModule
 {
 	/**
+	 * The table prefix to use for tables used by this module
+	 * Defaults to null, meaning no table prefix
+	 * @var string
+	 */	
+	public $tablePrefix;
+	
+	/**
+	 * The name of the post table (not including the tablePrefix)
+	 * Defaults to "posts"
+	 * @type string 
+	 */
+	public $postTable = "posts";
+	
+	/**
+	 * The name of the comment table (not including the tablePrefix)
+	 * Defaults to "comments"
+	 * @type string 
+	 */
+	public $commentTable = "comments";
+	
+	/**
+	 * The name of the lookup table (not including the tablePrefix)
+	 * Defaults to "lookup"
+	 * @type string 
+	 */
+	public $lookupTable = "lookup";
+	
+	/**
+	 * The name of the tag table (not including the tablePrefix)
+	 * Defaults to "tags"
+	 * @type string 
+	 */
+	public $tagTable = "tags";
+	
+	/**
 	 * The default controller for this module
 	 * @var string
 	 */
@@ -72,4 +107,5 @@ class BliigModule extends CWebModule
 		}
 		return parent::setComponents($components, $merge);
 	}
+	
 }
