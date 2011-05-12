@@ -22,7 +22,7 @@ class Tag extends EModuleActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_tag';
+		return "{{".Yii::app()->controller->module->tagTable."}}";
 	}
 
 	/**
