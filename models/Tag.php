@@ -1,6 +1,5 @@
 <?php
-
-class Tag extends CActiveRecord
+class Tag extends EModuleActiveRecord
 {
 	/**
 	 * The followings are the available columns in table 'tbl_tag':
@@ -23,7 +22,7 @@ class Tag extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{tag}}';
+		return 'tbl_tag';
 	}
 
 	/**

@@ -1,6 +1,6 @@
 <?php
 
-class Comment extends CActiveRecord
+class Comment extends EModuleActiveRecord
 {
     public $verifyCaptcha;
 	/**
@@ -31,7 +31,7 @@ class Comment extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{comment}}';
+		return 'tbl_comment';
 	}
 
 	/**

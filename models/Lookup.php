@@ -1,6 +1,6 @@
 <?php
 
-class Lookup extends CActiveRecord
+class Lookup extends EModuleActiveRecord
 {
 	/**
 	 * The followings are the available columns in table 'tbl_lookup':
@@ -29,7 +29,7 @@ class Lookup extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{lookup}}';
+		return 'tbl_lookup';
 	}
 
 	/**

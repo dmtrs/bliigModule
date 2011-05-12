@@ -2,7 +2,14 @@
 
 class BliigModule extends CWebModule
 {
+
     public $defaultController = 'post';
+    /** 
+     * The database connection component 
+     * @see CDbConnection
+     * @var array
+     */
+    public $db;
 	public function init()
 	{
 		// this method is called when the module is being created

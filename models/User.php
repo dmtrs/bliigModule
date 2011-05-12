@@ -1,6 +1,5 @@
 <?php
-
-class User extends CActiveRecord
+class User extends EModuleActiveRecord
 {
 	/**
 	 * The followings are the available columns in table 'tbl_user':
@@ -26,7 +25,7 @@ class User extends CActiveRecord
 	 */
 	public function tableName()
 	{
-		return '{{user}}';
+		return 'tbl_user';
 	}
 
 	/**
