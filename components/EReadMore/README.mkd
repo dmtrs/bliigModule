@@ -1,0 +1,39 @@
+EReadMore
+---------
+A simple extension to shorten an html code.
+- version 1.0
+- author Dimitrios Mengidis <tydeas.dr@gmail.com>
+
+###Requirements
+- [DOMDocument](http://www.php.net/manual/en/intro.dom.php)
+
+###Description
+This a common functionality found in blogs, where you see a part
+of an article and there is link usually named read more where
+get redirected to the full article.
+
+###Use
+####Simple case
+In the view add:
+    
+    <?php $this->beginWidget('application.extensions.EReadMore.EReadMore', array(
+         'linkUrl'=>$data->url
+     ));?>
+     <div>
+         <h1>EReadMore</h1>
+       	<p>A simple extension to shorten an html code.</p>
+       	<h2>Requirements</h2>
+          <ul>
+              <li><a href='php.net/manual/en/intro.dom.php' >DOMDocument</a></li>
+          </ul>
+     </div>
+     <?php $this->endWidget(); ?>
+
+####Advanced use
+Check the EReadMore code options to see what you can set.
+
+###Resources
+- [Github repo](http://www.github.com/dmtrs/EReadMore)
+- [Extension site](http://www.yiiframework.com/extension/ereadmore/)
+
+

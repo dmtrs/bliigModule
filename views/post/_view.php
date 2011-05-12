@@ -1,6 +1,6 @@
 <div class="post">
 	<div class="title">
-        <?php $this->beginWidget('ext.EReplacer', array(
+        <?php $this->beginWidget('EReplacer', array(
             'bag'=>'{}',
             'data'=>Yii::app()->params['icons'],
             'replace'=>'(isset($data[$el])) ? "<img src=\''.Yii::app()->request->baseUrl.'/".$data[$el]."\' />" : null;'
@@ -42,7 +42,7 @@
 </div>
 <?php
 if($data->imgs) {
-    $this->widget('application.extensions.fancybox.EFancyBox', array(
+    $this->widget('fancybox.EFancyBox', array(
         'target'=>'.fancybox',
         'config'=>array(),
         )

@@ -1,6 +1,6 @@
 <div class="post">
 	<div class="title">
-        <?php $this->beginWidget('ext.EReplacer', array(
+        <?php $this->beginWidget('EReplacer', array(
             'bag'=>'{}',
             'data'=>Yii::app()->params['icons'],
             'replace'=>'(isset($data[$el])) ? "<img src=\''.Yii::app()->request->baseUrl.'/".$data[$el]."\' />" : null;'          
@@ -21,7 +21,7 @@
 	</div>
 	<div class="content">
 		<?php
-            $this->beginWidget('application.extensions.EReadMore.EReadMore', array(
+            $this->beginWidget('EReadMore', array(
                 'linkUrl'=>$data->url
             ));
             if(!$data->htmlflag)

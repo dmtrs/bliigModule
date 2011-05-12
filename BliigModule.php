@@ -2,6 +2,7 @@
 // We import the module level components immediately
 Yii::import("bliig.models.*");
 Yii::import("bliig.components.*");
+Yii::import("bliig.components.EReadMore.*");
 
 /**
  * The bliig blog module.
