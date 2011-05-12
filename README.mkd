@@ -16,7 +16,14 @@ Rename the folder if you like for example to <code>bliig</code> and declare it t
 
     <?php return array(
         'modules'=>array(
-            'bliig',
+            'bliig'=>array(
+                'components'=>array(
+                    'db'=>array(
+                       'connectionString' => 'sqlite:'.dirname(__FILE__).'/../modules/bliig/data/blog.db',
+                       'tablePrefix'=>'tbl_',
+                    ),   
+                ),                                                                                            
+            ),
         ),
         ......
     ); ?>
