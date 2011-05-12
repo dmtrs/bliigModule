@@ -1,10 +1,23 @@
-To access the module, you need to modify the application configuration as follows:
-~~~
-<?php
-return array(
-    'modules'=>array(
-        'bliig',
-    ),
-    ......
-); ?>
-~~~
+bliigModule
+===========
+Yii module to use the bliig blog engine
+
+###Details
+This initial was a idea of [phpnode]() when talking about the bliig engine. 
+###Installation
+Access the <code>webapp/protected/modules/</code> folder in your applicatio. If not exists create it.
+Use git or donwload the module and extract it there. So you must have something like 
+
+    webapp/protected/module/bliigModule/
+
+Rename the folder if you like for example to <code>bliig</code> and declare it to the <code>protected/config/main.php</code>
+
+    <?php return array(
+        'modules'=>array(
+            'bliig',
+        ),
+        ......
+    ); ?>
+###History
+####Version 0.1
+- Gii generated module    
