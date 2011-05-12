@@ -9,13 +9,7 @@ Yii::import("bliig.components.*");
  */
 class BliigModule extends CWebModule
 {
-	/**
-	 * The table prefix to use for tables used by this module
-	 * Defaults to null, meaning no table prefix
-	 * @var string
-	 */	
-	public $tablePrefix;
-	
+		
 	/**
 	 * The name of the post table (not including the tablePrefix)
 	 * Defaults to "posts"
