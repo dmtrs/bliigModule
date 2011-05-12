@@ -22,4 +22,5 @@ Rename the folder if you like for example to <code>bliig</code> and declare it t
     ); ?>
 ###History
 ####Version 0.1
-- Gii generated module    
+- Gii generated module
+- Copied controllers/views and models from the bliig project 
