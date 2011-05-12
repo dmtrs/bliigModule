@@ -3,7 +3,9 @@ bliigModule
 Yii module to use the bliig blog engine
 
 ###Details
-This initial was a idea of [phpnode]() when talking about the bliig engine. 
+This initial was a idea of [phpnode](http://www.yiiframework.com/user/22573/) when talking about the bliig engine. 
+The idea is to have a small blog engine to be easily added to your yii web application.
+
 ###Installation
 Access the <code>webapp/protected/modules/</code> folder in your applicatio. If not exists create it.
 Use git or donwload the module and extract it there. So you must have something like 
