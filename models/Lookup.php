@@ -29,7 +29,7 @@ class Lookup extends EModuleActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_lookup';
+		return "{{".Yii::app()->controller->module->lookupTable."}}";
 	}
 
 	/**

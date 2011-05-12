@@ -32,7 +32,7 @@ class Post extends EModuleActiveRecord
 	 */
 	public function tableName()
 	{
-		return 'tbl_post';
+		return "{{".Yii::app()->controller->module->postTable."}}";
 	}
 
 	/**
