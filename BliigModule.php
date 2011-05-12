@@ -2,6 +2,7 @@
 
 class BliigModule extends CWebModule
 {
+    public $defaultController = 'post';
 	public function init()
 	{
 		// this method is called when the module is being created
@@ -13,7 +14,7 @@ class BliigModule extends CWebModule
 			'bliig.components.*',
 		));
 	}
-
+    
 	public function beforeControllerAction($controller, $action)
 	{
 		if(parent::beforeControllerAction($controller, $action))
